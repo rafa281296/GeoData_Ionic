@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListaPaisesPageModule } from '../pages/lista-paises/lista-paises.module';
 import { DetalhePaisPageModule } from '../pages/detalhe-pais/detalhe-pais.module';
+import {HttpModule} from "@angular/http";
+import { RestPaisProvider } from '../providers/rest-pais/rest-pais';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { DetalhePaisPageModule } from '../pages/detalhe-pais/detalhe-pais.module
     BrowserModule,
     IonicModule.forRoot(MyApp),
     ListaPaisesPageModule,
-    DetalhePaisPageModule
+    DetalhePaisPageModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -28,7 +31,8 @@ import { DetalhePaisPageModule } from '../pages/detalhe-pais/detalhe-pais.module
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RestPaisProvider
   ]
 })
 export class AppModule {}

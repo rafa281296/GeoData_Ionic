@@ -15,14 +15,12 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let ItemPais of VetorPais">
+    <ion-item *ngFor="let ItemPais of lista_paises">
       <ion-avatar item-start>
-        <img src="../../assets/imgs/minion.jpg">
+        <img [src]="ItemPais.flag">
       </ion-avatar>
-      <h2>{{ItemPais.fullName}}</h2>
-      <p>{{ItemPais.language}}</p>
-      <p>{{ItemPais.code}}</p>
-      <p>{{ItemPais.listCodes}}</p>
+      <h2>{{ItemPais.name}}</h2>
+      <p>{{ItemPais.capital}}</p>
       <button ion-button color="dark" clear (click)="DetalhePais(ItemPais)">Detalhes</button>
     </ion-item>
   </ion-list>
