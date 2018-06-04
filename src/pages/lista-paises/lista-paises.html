@@ -15,77 +15,15 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let ItemPais of VetorPais">
       <ion-avatar item-start>
         <img src="../../assets/imgs/minion.jpg">
       </ion-avatar>
-      <h2>{{Continente}}</h2>
-      <p>{{Continente}}</p>
-      <button ion-button color="dark" clear (click)="DetalhePais(Continente)">Detalhes</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/minion.jpg">
-      </ion-avatar>
-      <h2>{{Continente}}</h2>
-      <p>{{Continente}}</p>
-      <button ion-button color="dark" clear (click)="DetalhePais(Continente)">Detalhes</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/minion.jpg">
-      </ion-avatar>
-      <h2>{{Continente}}</h2>
-      <p>{{Continente}}</p>
-      <button ion-button color="dark" clear (click)="DetalhePais(Continente)">Detalhes</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/minion.jpg">
-      </ion-avatar>
-      <h2>{{Continente}}</h2>
-      <p>{{Continente}}</p>
-      <button ion-button color="dark" clear (click)="DetalhePais(Continente)">Detalhes</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/minion.jpg">
-      </ion-avatar>
-      <h2>{{Continente}}</h2>
-      <p>{{Continente}}</p>
-      <button ion-button color="dark" clear (click)="DetalhePais(Continente)">Detalhes</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/minion.jpg">
-      </ion-avatar>
-      <h2>{{Continente}}</h2>
-      <p>{{Continente}}</p>
-      <button ion-button color="dark" clear (click)="DetalhePais(Continente)">Detalhes</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/minion.jpg">
-      </ion-avatar>
-      <h2>{{Continente}}</h2>
-      <p>{{Continente}}</p>
-      <button ion-button color="dark" clear (click)="DetalhePais(Continente)">Detalhes</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/minion.jpg">
-      </ion-avatar>
-      <h2>{{Continente}}</h2>
-      <p>{{Continente}}</p>
-      <button ion-button color="dark" clear (click)="DetalhePais(Continente)">Detalhes</button>
-    </ion-item>
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/minion.jpg">
-      </ion-avatar>
-      <h2>{{Continente}}</h2>
-      <p>{{Continente}}</p>
-      <button ion-button color="dark" clear (click)="DetalhePais(Continente)">Detalhes</button>
+      <h2>{{ItemPais.fullName}}</h2>
+      <p>{{ItemPais.language}}</p>
+      <p>{{ItemPais.code}}</p>
+      <p>{{ItemPais.listCodes}}</p>
+      <button ion-button color="dark" clear (click)="DetalhePais(ItemPais)">Detalhes</button>
     </ion-item>
   </ion-list>
 </ion-content>

@@ -14,10 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'detalhe-pais.html',
 })
 export class DetalhePaisPage {
-public Continente;
+public Item;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.Continente = this.navParams.get("Continente");
+    this.Item = this.navParams.get("Item");
   }
 
   ionViewDidLoad() {
