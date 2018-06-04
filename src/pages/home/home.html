@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Selecione o continente</ion-label>
+      <ion-select [(ngModel)]="Continente">
+        <ion-option value="all">Todos os continentes</ion-option>
+        <ion-option value="africa">Africa</ion-option>
+        <ion-option value="americas">America</ion-option>
+        <ion-option value="asia">Asia</ion-option>
+        <ion-option value="europe">Europe</ion-option>
+        <ion-option value="oceania">Oceania</ion-option>
+      </ion-select>
+    </ion-item>
+    <button ion-button color="light" style="display: block; float:right;" (click)="ListarPaises(Continente)">Listar</button>
+  </ion-list>
+
+
+</ion-content>
